@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page with iFrame</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #eaeaea;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .nav {
+      margin-bottom: 20px;
+    }
+    .nav a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .nav a:hover {
+      background: #0056b3;
+    }
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 600px;
+      border: 2px solid #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to the Portal</h1>
+
+  <!-- Links to load pages inside iframe -->
+  <div class="nav">
+    <a href="index3.html" target="myFrame">Page 1</a>
+    <a href="index4.html" target="myFrame">Page 2</a>
+  </div>
+
+  <!-- Single iframe (pages will load here) -->
+  <iframe name="myFrame" src="index3.html"></iframe>
+
+</body>
+</html>

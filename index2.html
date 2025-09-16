@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+<body>
+
+  <div>
+     
+     
+      <div>
+        <div>
+          <form action="" method="POST">
+            <table>
+              <tr >
+                <td>  <img src="img.jpg" alt="Student Registration Image" width="50" height="50"></td>
+                <td>   <h2>Student Registration Form</h2></td>
+              </tr>
+            
+         
+            </table >
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter a valid email address" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="rollNo">Roll No:</label>
+            <input type="text" id="rollNo" name="rollNo" placeholder="e.g., 12345678" required><br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your full address" required></textarea><br><br>
+
+            <label>Branch:</label>
+            <input type="radio" id="it" name="branch" value="IT" required>
+            <label for="it">IT</label>
+
+            <input type="radio" id="ce" name="branch" value="CE">
+            <label for="ce">CE</label>
+
+            <input type="radio" id="cse" name="branch" value="CSE">
+            <label for="cse">CSE</label>
+
+            <input type="radio" id="aiml" name="branch" value="AIML">
+            <label for="aiml">AIML</label><br><br>
+
+            <label for="skills">Skills (Hold Ctrl/Cmd to select multiple):</label><br>
+            <select id="skills" name="skills" multiple>
+              <option value="Java">Java</option>
+              <option value="C++">C++</option>
+              <option value="Python">Python</option>
+            </select><br><br>
+
+            <label for="file">Upload Photo:</label>
+            <input type="file" id="file" name="file">
+            <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
