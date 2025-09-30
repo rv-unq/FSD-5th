@@ -19,28 +19,28 @@ const data = [
     productName: "A",
     price: 499,
     manufacturingDate: "22-09-2025",
-    color: "red"
+    color: ["red" , "blue" ,"black"]
   },
   {
     productID: 2,
     productName: "B",
     price: 599,
     manufacturingDate: "23-09-2025",
-    color: "green"
+    color: ["green" , "pink" ,"yellow"]
   },
   {
     productID: 3,
     productName: "C",
     price: 699,
     manufacturingDate: "24-09-2025",
-    color: "blue"
+    color: ["ocean" , "voilet" ,"white"]
   },
   {
     productID: 4,
     productName: "D",
     price: 799,
     manufacturingDate: "25-09-2025",
-    color: "orange"
+    color:[ "orange" , "black"]
   }
 ]
 
@@ -49,3 +49,8 @@ console.log(mapData);
 
 const filterDat = data.filter((ele)=> ele.price < 600)
 console.log(filterDat)
+
+
+
+const filteredCOL = data.filter((ele) => ele.color.includes("black"));
+console.log(filteredCOL);
