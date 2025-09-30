@@ -8,7 +8,7 @@ const bookTicket = ()=>{
         setTimeout(()=>{
             printMessage("seat has been selected sucessfully");
             setTimeout(()=>{
-                printMessage("yor seat has been booked");
+                printMessage("yor seat has been booked")
                 setTimeout(()=>{
                     printMessage("Payment has been done")
                     setTimeout(()=>{
